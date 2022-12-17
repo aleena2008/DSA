@@ -1,0 +1,39 @@
+1. Rotate an array to left/right n times.
+
+2. Swap two numbers
+
+3. Sort an array using selection sort
+
+4. Re-arrange an array such that arr[i]=i
+        Given an array of elements of length N, ranging from 0 to N – 1. All elements may not be present in the array. 
+        If the element is not present then there will be -1 present in the array. 
+        Rearrange the array such that arr[i] = i and if i is not present, display -1 at that place.
+
+5. Rearrange positive and negative numbers in O(n) time and O(1) extra space
+        An array contains both positive and negative numbers in random order. 
+        Rearrange the array elements so that positive and negative numbers are placed alternatively. 
+        A number of positive and negative numbers need not be equal. If there are more positive numbers they appear at the end of the array. 
+        If there are more negative numbers, they too appear at the end of the array.
+        For example, if the input array is [-1, 2, -3, 4, 5, 6, -7, 8, 9], then the output should be [9, -7, 8, -3, 5, -1, 2, 4, 6]
+
+6. Reorder an array according to given indexes
+        Given two integer arrays of same size, “arr[]” and “index[]”, reorder elements in “arr[]” according to given index array. 
+
+7. Get pivot element
+        arr = [5, 6, 0, 1, 2]
+        output -> 2 (index of pivot)
+
+8. Binary Search
+
+9. Search an element in a sorted and rotated Array
+        Given a sorted and rotated array arr[] of size N and a key, the task is to find the key in the array.
+        Note: Find the element in O(logN) time and assume that all the elements are distinct.
+            Input  : arr[] = {5, 6, 7, 8, 9, 10, 1, 2, 3}, key = 3
+            Output : Found at index 8
+        (with duplicate elements)
+
+10. Find the Rotation Count in Rotated Sorted array
+
+11. K-th Largest Sum Contiguous Subarray
+
+12. K Most Frequent
