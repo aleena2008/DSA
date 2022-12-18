@@ -227,59 +227,40 @@ def Kth_largest_sum(arr, k):
         for j in range(i, n):
             sums.append(sum[i][j])
     sums.sort()
-    print(sums, len(sums)-k)
-    print(sums[len(sums)-k])
 
+    print(sums[len(sums)-k])
     
     return
 
-import time
+# Check if a pair exists with given sum in given array --------------------------------------------------------------------------------------------------------------------------
 
+from collections import defaultdict
 
-# arr = [eval(i) for i in arr.split()]
-# k = int(input("Enter k : "))
-
-# t=time.time()
-
-# dic = dict()
-
-# for i in arr:
-#     if i in dic:
-#         dic[i]+=1
-#     else:
-#         dic[i] = 1
-
-
-# dic = sorted(dic.items(), key=lambda x:x[1])
-# dic = (dic[len(dic)-k:])
-# for x,y in dic:
-#     print(x)
-
-# print(time.time()-t)
-
-import time
-
-def K_most_frequent(arr, k):
-    arr = [1, 2, 2, 3, 3, 3]
-    k = 2
-    t = time.time()
-    dic = dict()
-
+def check_sum(arr, sum):
+    dic = defaultdict(lambda: None)
     for i in arr:
-        if i in dic:
-            dic[i] += 1
+        if (dic[i]!=None):
+            return "Yes"
         else:
-            dic[i] = 1
+            dic[sum-i]=1
+    return "No"
 
-    dic = sorted(dic.items(), key=lambda kv: kv[1])
+# Max area in histogram --------------------------------------------------------------------------------------------------------------------------------------------------
 
-    for i in range(len(dic) - 1, len(dic) - k - 1, -1):
-        print(dic[i][0])
-    
-    
-arr = input("Enter array: ")
-arr = [eval(i) for i in arr.split()]
-k = int(input("Enter k : "))
+def max_area_histogram(height):
+    n = len(height)
+    max_area = 0
+    l, r = 0, n-1
+    while (l<r):
+        area = (r-l)*min(height[l], height[r])
+        max_area = max(max_area, area)
+        if (height[l]>height[r]):
+            r-=1
+        else:
+            l+=1
 
-K_most_frequent(arr, k)
+    return max_area
 
+
+height = [1,8,6,2,5,4,8,3,7]
+print(max_area_histogram(height))

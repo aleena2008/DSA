@@ -1,0 +1,16 @@
+DICTIONARY
+
+1. Python program to find the sum of all items in a dictionary.
+
+2. Find common elements in three sorted arrays by dictionary intersection
+
+3. Key with maximum unique values
+
+4. Count characters in string
+
+5. Repeat characters in string
+
+6. Replace String by Kth Dictionary value      
+        Input : test_list = [“Gfg”, “is”, “Best”], subs_dict = {“Gfg” : [5, 6, 7], “is” : [7, 4, 2]}, K = 0 
+        Output : [5, 7, “Best”] 
+        Explanation : “Gfg” and “is” is replaced by 5, 7 as 0th index in dictionary value list.

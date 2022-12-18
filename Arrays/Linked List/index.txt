@@ -1,0 +1,27 @@
+LINKED list
+
+1. Insertion
+    beginning
+    between
+    end
+
+3. Print linke list
+
+3. Deletion
+    first
+    node in between'
+    last
+
+4. Search elt
+
+5. Length of linked list
+
+6. Reverse a linked list
+
+7. Merge two sorted linked lists
+
+8. Reverse linked list in groups
+        Good - https://www.geeksforgeeks.org/reverse-a-linked-list-in-groups-of-given-size/
+
+
+
