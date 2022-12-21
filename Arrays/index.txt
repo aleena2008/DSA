@@ -37,3 +37,9 @@
 11. K-th Largest Sum Contiguous Subarray
 
 12. K Most Frequent
+
+13. Check if a pair exists with given sum in given array
+
+14. Max area in histogram
+
+15. Next Greater Element (NGE) for every element in given Array

@@ -262,5 +262,35 @@ def max_area_histogram(height):
     return max_area
 
 
-height = [1,8,6,2,5,4,8,3,7]
-print(max_area_histogram(height))
+# Next Greater Element (NGE) for every element in given Array -------------------------------------------------------------------------------------------------------------
+
+def next_greater(arr):
+    n=len(arr)
+    ans = [-1 for i in range(n)]
+    ans[-1] = -1
+    high = arr[-1]
+    stck = []
+
+    for i in range(n-1, 0, -1):
+        print(stck)
+        if arr[i]>arr[i-1]:
+            ans[i-1]=arr[i]
+        else:
+            for j in range(len(stck)-1, -1, -1):
+                if stck[j]>arr[i-1]:
+                    ans[i-1]=stck[j]
+                    break
+        if arr[i]>high:
+            stck=[arr[i]]
+            high=arr[i]
+        else:
+            stck.append(arr[i])
+    print(ans)
+
+arr = [13 , 7, 6 , 12]
+next_greater(arr)
+
+
+
+
+

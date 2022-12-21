@@ -1,0 +1,10 @@
+BINARY TREES
+
+1. Insertion
+2. Deletion 
+3. Inorder traversal
+4. Postorder
+5. Preorder
+6. Level order
+7. Sum tree
+8. Depth

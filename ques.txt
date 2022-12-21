@@ -1,0 +1,5 @@
+Gold Mine Problem
+    https://www.geeksforgeeks.org/gold-mine-problem/
+
+Reverse linked list in groups
+    https://www.geeksforgeeks.org/reverse-a-linked-list-in-groups-of-given-size/
